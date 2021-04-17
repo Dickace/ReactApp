@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from "react";
 import { Chart, registerables } from 'chart.js';
-import Utils from "moment";
+
 import axios from "axios";
-import * as ReactDOM from "react-dom";
+
 Chart.register(...registerables);
 
 

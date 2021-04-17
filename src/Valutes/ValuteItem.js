@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ValuteGrafics from "./ValuteGrafics";
-import axios from 'axios'
+
 
 function ValuteItem(props){
     const styles={

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import ValuteItem from "./ValuteItem";
 
 function ValutesList(props){
