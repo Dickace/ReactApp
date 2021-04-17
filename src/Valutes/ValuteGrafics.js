@@ -92,8 +92,8 @@ function ValuteGrafics(props) {
                     {
                         label: props.Valute.Name,
                         data: valArr,
-                        borderColor: "rgba(140,99,132,1)",
-                        backgroundColor: "rgba(140,99,132,0.5)",
+                        borderColor: "rgba(0, 59, 70, 1)",
+                        backgroundColor: "rgba(0, 59, 70, 0.5)",
                         pointRadius: 2,
                         fill: true,
                         tension: 0.3

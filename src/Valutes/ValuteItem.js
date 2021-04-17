@@ -3,12 +3,7 @@ import ValuteGrafics from "./ValuteGrafics";
 
 
 function ValuteItem(props){
-    const styles={
-        p:{
 
-        },
-
-    }
 
 
     const [hidden, setHidden] = useState(true)
@@ -17,14 +12,15 @@ function ValuteItem(props){
 
 
     return(
-            <div onClick={()=> {hidden===true ? setHidden(false): setHidden(true)}} className="ValuteItem" >
-                <p style={styles.p}>{props.Valute.CharCode}</p>
-                <p style={styles.p}>{props.Valute.Name}</p>
-                <p style={styles.p}>{props.Valute.Nominal}</p>
-                <p style={styles.p}>{props.Valute.Value}</p>
-
+            <li className="ValuteItem" >
+                <div onClick={()=> {hidden===true ? setHidden(false): setHidden(true)}} className="ValuteItemText">
+                    <p >{props.Valute.CharCode}</p>
+                    <p className="ValuteItemText_NameLabel">{props.Valute.Name}</p>
+                    <p className="ValuteItemText_NominalLabel">{props.Valute.Nominal}</p>
+                    <p className="ValuteItemText_ValueLabel">{props.Valute.Value}</p>
+                </div>
                 {hidden ? <div/> : <ValuteGrafics Valute={props.Valute} />}
-            </div>
+            </li>
     )
 }
 

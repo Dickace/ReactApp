@@ -3,7 +3,7 @@
     font-family: Cambria, serif;
     font-size: 24pt;
     align-content: center;
-    background-color: cornflowerblue;
+    background-color: rgba(0, 59, 70, 1);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -12,16 +12,51 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    color: antiquewhite;
+    color: white;
     width: initial;
 }
 .ValutesList{
     list-style-type: none;
+    width: auto;
+    margin-block: 0;
+    padding-inline: 0;
+}
+.ValutesList li:nth-child(odd){
+    background-color: rgba(7, 87, 91, 0.2);;
+}
+.ValutesList li:nth-child(even){
+    background-color: rgba(102, 165, 173,0.2);
 }
 
 .ValuteItem{
+
     display: flex;
     justify-content: left;
-    width: max-content;
-    margin: 1rem ;
+    width: auto;
+    margin: auto ;
+    flex-direction: column;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.ValuteItem_Header{
+    font-weight: bold;
+
+}
+.ValuteItemText{
+    display: flex;
+    justify-content: space-evenly;
+    width: fill;
+    margin: auto ;
+}
+.ValuteItemText_NameLabel{
+    text-align: center;
+    flex-grow: 1;
+}
+.ValuteItemText_ValueLabel{
+    text-align: end;
+    min-width: 6rem;
+}
+.ValuteItemText_NominalLabel{
+    text-align: center;
+    width: 5rem;
 }
