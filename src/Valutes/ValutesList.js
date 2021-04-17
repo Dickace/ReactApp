@@ -13,7 +13,7 @@ function ValutesList(props){
             {props.Valutes.map((Valute, index)=>{
                 return(
                     <ValuteItem Valute={Valute}
-                                key={Valute.$id}
+                                key={Valute.$.ID}
                                 index={index}
                     />
                 )
