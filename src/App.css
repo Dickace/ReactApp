@@ -1,0 +1,27 @@
+.Header{
+    width: inherit;
+    font-family: Cambria, serif;
+    font-size: 24pt;
+    align-content: center;
+    background-color: cornflowerblue;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.TittleHeader{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: antiquewhite;
+    width: initial;
+}
+.ValutesList{
+    list-style-type: none;
+}
+
+.ValuteItem{
+    display: flex;
+    justify-content: left;
+    width: max-content;
+    margin: 1rem ;
+}
