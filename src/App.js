@@ -30,7 +30,9 @@ function App() {
                     console.log(error)
                 })
         }
+
         getValutesData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     useEffect(()=>{
