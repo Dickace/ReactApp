@@ -80,7 +80,6 @@ function ValuteGrafics(props) {
             }
         getGraficData()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-
     }, []);
     useEffect(()=>{
         function setChartData(Valute){
