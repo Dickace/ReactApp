@@ -13,21 +13,24 @@ function App() {
 
     const [responseData, setResponseData] = useState()
     useEffect(()=>{
-        axios({
-            "method": "GET",
-            "url": "https://www.cbr-xml-daily.ru/daily.xml",
-            "params": {
+        const getValutesData = () =>{
+            axios({
+                "method": "GET",
+                "url": "https://www.cbr-xml-daily.ru/daily.xml",
+                "params": {
 
-            }
-        })
-            .then((response)=>{
-                if(Valutes==null){
-                    setResponseData(response.data)
                 }
             })
-            .catch((error)=>{
-                console.log(error)
-            })
+                .then((response)=>{
+                    if(Valutes==null){
+                        setResponseData(response.data)
+                    }
+                })
+                .catch((error)=>{
+                    console.log(error)
+                })
+        }
+        getValutesData();
     },[])
 
     useEffect(()=>{

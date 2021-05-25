@@ -52,29 +52,33 @@ function ValuteGrafics(props) {
 
 
     useEffect(() => {
-        let responseData
-            axios({
-                    "method": "GET",
-                    "url": Url,
-                    "params": {}
-                }
-            )
-                .then((response)=>{
 
-                    if (valutes==null){
-                        responseData = response
-                        var parseString = require('xml2js').parseString
-                        parseString(responseData.data, function (err, result){
-                            setValutes(result)
-
-                        })
+            const getGraficData = () =>{
+                axios({
+                        "method": "GET",
+                        "url": Url,
+                        "params": {}
                     }
-                })
-                .catch((err)=>{
-                    console.log(err)
-                })
+                )
+                    .then((response)=>{
+
+                        if (valutes==null){
+                            let responseData = response
+                            var parseString = require('xml2js').parseString
+                            parseString(responseData.data, function (err, result){
+                                setValutes(result)
+
+                            })
+                        }
+                    })
+                    .catch((err)=>{
+                        console.log(err)
+                    })
 
 
+
+            }
+        getGraficData()
 
     }, []);
     useEffect(()=>{
