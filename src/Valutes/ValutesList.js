@@ -6,17 +6,17 @@ function ValutesList(props){
 
 
     return(
-        <div>
+        <div className={"valutesContainer"} >
 
-        <ul className='ValutesList'>
-            <li className="ValuteItem ValuteItem_Header">
+        <ul  className='ValutesList'>
+            <div className="ValuteItem ValuteItem_Header">
                 <div className="ValuteItemText">
                     <p>Код</p>
                     <p className="ValuteItemText_NameLabel">Название валюты</p>
-                    <p className="ValuteItemText_NominalLabel">Номинал</p>
+                    <p className="ValuteItemText_Header">Номинал</p>
                     <p className="ValuteItemText_ValueLabel">Цена</p>
                 </div>
-            </li>
+            </div>
             {props.Valutes.map((Valute, index)=>{
                 return(
                     <ValuteItem Valute={Valute}

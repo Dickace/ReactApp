@@ -28,7 +28,7 @@ function App() {
             .catch((error)=>{
                 console.log(error)
             })
-    },[responseData, setResponseData,Valutes])
+    },[])
 
     useEffect(()=>{
         if (responseData!=null){
@@ -42,13 +42,13 @@ function App() {
 
 
     return (
-      <div>
+      <div className={"mainPage"}>
         <HeaderTittle/>
 
           {Valutes ? <ValutesList Valutes={Valutes}/> :<p>No Valute Data</p>}
 
       </div>
   );
-}
+};
 
 export default App;

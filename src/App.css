@@ -1,11 +1,34 @@
+.mainPage{
+    background: url('images/BackgroundImage.jpg') repeat fixed center;
+    background-size: 200px 200px;
+    overflow: hidden;
+
+}
 .Header{
-    width: inherit;
+    width: 100%;
+    position: fixed;
+    display: flex;
+
     font-family: Cambria, serif;
     font-size: 24pt;
     align-content: center;
     background-color: rgba(0, 59, 70, 1);
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.DescribeBackground{
+    opacity: 0.99;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+.valutesContainer{
+
+
 }
 
 .TittleHeader{
@@ -15,12 +38,60 @@
     color: white;
     width: initial;
 }
+.TittleHeader_DescribeBox{
+    z-index: 2;
+    width: 3rem;
+}
+.TittleHeader_DescribeIcon{
+    color: white;
+    margin-right: 3rem;
+
+}
+.TittleHeader_DescribeIcon_Close{
+
+    color: black;
+}
+.TextDescribeContainer{
+    background: white;
+    min-width: 400px;
+    max-width: 700px;
+    width: 40%;
+    margin: 5rem auto 0 auto;
+}
+
+.TextDescribe_Text{
+    font-family: Cambria , serif;
+
+    font-size: 14pt;
+}
+.TextDescribe_Header{
+    padding-top: 2rem;
+    text-align: center;
+
+    font-size: 24pt;
+    font-weight: bold;
+}
+.TextDescribe_MainText{
+    font-family: Roboto, sans-serif;
+    line-height: 1.45;
+    text-indent:30px;
+    text-align: justify;
+    margin: 0 auto 0 auto;
+    padding-bottom: 4rem;
+    width: 80%;
+}
 .ValutesList{
+    background: rgba(255,255,255,0.9);
     list-style-type: none;
-    width: auto;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    padding-top: 69px;
     margin-block: 0;
     padding-inline: 0;
 }
+
+
+
 .ValutesList li:nth-child(odd){
     background-color: rgba(7, 87, 91, 0.2);;
 }
@@ -49,6 +120,8 @@
     margin: auto ;
 }
 .ValuteItemText_NameLabel{
+    display: flex;
+    justify-content: center;
     text-align: center;
     flex-grow: 1;
 }
@@ -59,4 +132,26 @@
 .ValuteItemText_NominalLabel{
     text-align: center;
     width: 5rem;
+}
+.ValuteItemText_NameLabel_ForChart{
+
+
+}
+.ValuteItemText_NameLabel_Icon{
+    display: inline;
+    margin: auto 0 auto 10px;
+    color:rgba(0, 59, 70, 1);
+}
+
+.ValuteItemText_ValueLabel_ForChart{
+    text-align: end;
+    min-width: 6rem;
+}
+.ValuteItemText_NominalLabel_ForChart{
+    text-align: center;
+    width: 5rem;
+}
+.valuteGrafic{
+    width: 70%;
+   margin: 0 auto 0 auto;
 }

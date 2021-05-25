@@ -76,7 +76,7 @@ function ValuteGrafics(props) {
 
 
 
-    }, [valutes,Url]);
+    }, []);
     useEffect(()=>{
         function setChartData(Valute){
             var valArr =[]
@@ -117,8 +117,8 @@ function ValuteGrafics(props) {
 
 
     return (
-        <div>
-            <canvas key={props.key} ref={chartContainer} width={600} height={300} />
+        <div className={"valuteGrafic"}>
+            <canvas  id={props.key} ref={chartContainer} width={9} height={5}  />
         </div>
     );
 };
