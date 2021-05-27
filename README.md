@@ -1,1 +1,1 @@
-Working site avalibale on https://stupefied-ramanujan-c8752e.netlify.app
+Working site avalibale on https://excangeratesreactapp.netlify.app/
